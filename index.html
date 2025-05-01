@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kalkulator</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <title>Kalkulator Suhu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <script src="js/script.js"></script> </head>
+  </head>
+  <body>
+    <div class="form-box">
+      <h2>Kalkulator Konversi Suhu</h2>
+      <p>Masukkan suhu derajat Celsius (°C) ke kotak di bawah, lalu klik tombol Konversi
+        untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+  
+      <!--Konversi Suhu-->
+      <label for="celsius">Celsius (°C):</label>
+      <textarea id="celsius" rows="1" placeholder="Masukkan suhu dalam °C"></textarea>
+      
+      <label for="fahrenheit">Fahrenheit (°F):</label>
+      <textarea id="fahrenheit" rows="1" readonly></textarea>
+  
+      <label for="calculation">Cara Kalkulasi:</label>
+      <textarea id="calculation" rows="2" readonly></textarea>
+      
+      <!--Tombol aksi: Konversi, Reset, Reverse-->
+      <div class="section-item" id="form-action">
+        <button class="bg-1" onclick="convert()">Konversi</button>
+        <button class="bg-2" onclick="resetForm()">Reset</button>
+        <button class="bg-3" onclick="reverse()">Reverse</button>
+      </div>
+  
+      <div class="footer">© 2025 Tiara. All rights reserved.</div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  </html>
